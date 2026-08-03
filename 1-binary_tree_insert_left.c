@@ -16,6 +16,8 @@ return (NULL);
 
 temp = parent;
 
+if (temp->left == NULL)
+{
 leftnode = malloc(sizeof(binary_tree_t));
 if (leftnode == NULL)
 return (NULL);
@@ -28,4 +30,7 @@ leftnode->left = NULL;
 leftnode->right = NULL;
 
 return (leftnode);
+}
+else 
+return (NULL);
 }
