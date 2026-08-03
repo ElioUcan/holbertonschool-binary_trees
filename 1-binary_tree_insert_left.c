@@ -32,6 +32,8 @@ else
 {
 leftnode->left = parent->left;
 parent->left->parent = leftnode;
+leftnode->parent = parent;
+parent->left = leftnode;
 return (leftnode);
 }
 }
