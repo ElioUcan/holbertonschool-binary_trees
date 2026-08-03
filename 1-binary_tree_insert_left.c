@@ -16,16 +16,17 @@ return (NULL);
 
 temp = parent;
 
+leftnode = malloc(sizeof(binary_tree_t));
+if (leftnode == NULL)
+return (NULL);
+
+
 leftnode->n = value;
 leftnode->left = NULL;
 leftnode->right = NULL;
 
 if (temp->left == NULL)
 {
-leftnode = malloc(sizeof(binary_tree_t));
-if (leftnode == NULL)
-return (NULL);
-
 temp->left = leftnode;
 leftnode->parent = parent;
 
