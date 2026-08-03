@@ -29,14 +29,12 @@ if (temp->left == NULL)
 {
 temp->left = leftnode;
 leftnode->parent = parent;
-
-
 return (leftnode);
 }
 else
 {
 temp->left->left = leftnode;
-leftnode->parent = temp->left->left;
+leftnode->parent = temp->left;
 return (leftnode);
 }
 }
