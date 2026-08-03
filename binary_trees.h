@@ -20,7 +20,7 @@ typedef struct binary_tree_s
 	struct binary_tree_s *right;
 } binary_tree_t;
 
-void binary_tree_print(const binary_tree_t *);
+void binary_tree_print(const binary_tree_t *tree);
 
 /**
  * struct binary_tree_s - Binary tree node
